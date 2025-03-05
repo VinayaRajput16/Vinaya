@@ -14,7 +14,7 @@ const Education = () => {
   ];
 
   return (
-    <section className="bg-[#0a192f] py-16 border shadow-2xl p-4">
+    <section className="bg-[#0a192f] py-16 border shadow-2xl p-4" id='education'>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-white mb-8">My Education</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

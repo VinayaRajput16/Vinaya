@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ContactSection() {
   return (
-    <div className="p-6 bg-[#0a192f] border border-black-700 ">
+    <div className="p-6 bg-[#0a192f] border border-black-700 " id="contact">
       <h2 className="text-2xl font-bold mb-4 text-white">Contact Me</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">

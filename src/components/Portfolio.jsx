@@ -12,7 +12,7 @@ const projects = [
     title: "React Memory Game",
     description: "A fun game to test your memory skills.",
     category: "React Projects",
-    link: "https://memory-card-react-h12skf2py-vinayarajput16s-projects.vercel.app/game",
+    link: "https://memory-card-react-vinayarajput16-vinayarajput16s-projects.vercel.app/",
     image: pr1,
     tags: ["React", "CSS", "State Management"],
   },
@@ -30,7 +30,7 @@ const projects = [
     title: "Personal Portfolio",
     description: "A portfolio website built using React.",
     category: "React Projects",
-    link: "https://example.com/personal-portfolio",
+    link: "https://github.com/VinayaRajput16/Vinaya",
     image: pr4,
     tags: ["React", "Tailwind CSS", "Framer Motion"],
   },
@@ -65,17 +65,17 @@ export default function ProjectSection() {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="p-6 bg-[#0a192f] text-white py-6">
+    <div className="p-6 bg-[#0a192f] text-white py-6" id="portfolio">
       <h2 className="text-2xl font-bold mb-4">Projects</h2>
 
-      <div className="mb-6 flex gap-4 text-black text-xs md:text-lg">
+      <div className="mb-6 flex gap-4 text-black text-sm md:text-lg">
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
             className={`${
               selectedCategory === category ? "bg-green-500 text-white" : "bg-gray-200"
-            } px-2 py-1 md:px-2 md:py-2 rounded-xl transition duration-300`}
+            } px-2 py-2 md:px-2 md:py-2 rounded-xl transition duration-300`}
           >
             {category}
           </button>
@@ -95,7 +95,7 @@ export default function ProjectSection() {
               className="w-full h-40 object-cover mb-4"
             />
             <div className="p-4 bg-gray-400">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+              <h3 className="text-xl text-gray-700 font-bold mb-2">{project.title}</h3>
               <p className="text-gray-600 mb-4">{project.description}</p>
 
               {/* Display Tags */}

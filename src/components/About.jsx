@@ -3,15 +3,14 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="bg-[#0a192f] py-16 text-white">
+    <section className="bg-[#0a192f] py-16 text-white" id='about'>
       <div className="container mx-auto px-4">
         <div className="text-center sm:text-left mb-16">
-          <h2 className="text-3xl font-bold mb-4">About Me</h2>
+          <h2 className="text-3xl font-bold mb-4 md:text-center">About Me</h2>
           <p className="text-lg leading-relaxed">
             Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.
           </p>
         </div>
-
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center">
           <div className="flex flex-col items-center sm:items-start">

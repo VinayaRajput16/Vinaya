@@ -5,28 +5,36 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 export default function HeroSection() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const smoothScroll = (e, targetId) => {
+    e.preventDefault();
+    document.getElementById(targetId)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };  
+
   return (
     <div className="h-screen flex flex-col justify-center items-start bg-[#0a192f] text-white px-6 md:px-20">
       {/* Navbar */}
       <nav className="absolute top-5 right-6 md:right-10 flex justify-between items-center w-full md:w-auto">
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6 text-gray-300">
-          <a href="#about" className="hover:text-white">
+          <a href="#about" onClick={(e) => smoothScroll(e, 'about')} className="hover:text-white">
             01. About
           </a>
-          <a href="#experience" className="hover:text-white">
+          <a href="#education" onClick={(e) => smoothScroll(e, 'education')} className="hover:text-white">
             02. Education
           </a>
-          <a href="#work" className="hover:text-white">
+          <a href="#portfolio" onClick={(e) => smoothScroll(e, 'portfolio')} className="hover:text-white">
             03. Projects
           </a>
-          <a href="#contact" className="hover:text-white">
+          <a href="#contact" onClick={(e) => smoothScroll(e, 'contact')} className="hover:text-white">
             04. Contact
           </a>
         </div>
-        <button className="hidden md:block border-2 border-green-400 px-4 py-2 mx-4 text-green-400 hover:bg-green-400 hover:text-[#0a192f] transition rounded-md">
+        <a href="https://www.dropbox.com/scl/fi/s0cyfpvme50anudo1w6y3/vinaya-rajput-resume.pdf?rlkey=60diz44jje6177wxhko9197v6&st=ivvecbth&dl=0" className="hidden md:block border-2 border-green-400 px-4 py-2 mx-4 text-green-400 hover:bg-green-400 hover:text-[#0a192f] transition rounded-md">
           Resume
-        </button>
+        </a>
 
       </nav>
       {/* Hamburger Menu */}
@@ -96,28 +104,28 @@ export default function HeroSection() {
       {/* Social Icons */}
       <div className="flex items-center gap-4 mt-8 text-gray-500">
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/webcreation261123/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaInstagram size={30} className="text-pink-500 hover:opacity-80 transition" />
         </a>
         <a
-          href="https://wa.me/yourwhatsappnumber"
+          href="https://wa.me/918856979693"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaWhatsapp size={30} className="text-green-500 hover:opacity-80 transition" />
         </a>
         <a
-          href="https://github.com/yourgithub"
+          href="https://github.com/VinayaRajput16/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub size={30} className="hover:opacity-80 transition" />
         </a>
         <a
-          href="https://www.linkedin.com/in/yourlinkedin"
+          href="https://www.linkedin.com/in/vinaya-rajput"
           target="_blank"
           rel="noopener noreferrer"
         >
