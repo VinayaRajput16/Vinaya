@@ -32,7 +32,7 @@ export default function HeroSection() {
             04. Contact
           </a>
         </div>
-        <a href="https://www.dropbox.com/scl/fi/s0cyfpvme50anudo1w6y3/vinaya-rajput-resume.pdf?rlkey=60diz44jje6177wxhko9197v6&st=ivvecbth&dl=0" className="hidden md:block border-2 border-green-400 px-4 py-2 mx-4 text-green-400 hover:bg-green-400 hover:text-[#0a192f] transition rounded-md">
+        <a href="https://www.dropbox.com/scl/fi/5mgc63bmjyqrohmdahf5p/Vinaya-Rajput-3.pdf?rlkey=0in75bkjzl295ajap4v8kl5lw&st=v8kx3qwr&dl=0" className="hidden md:block border-2 border-green-400 px-4 py-2 mx-4 text-green-400 hover:bg-green-400 hover:text-[#0a192f] transition rounded-md">
           Resume
         </a>
 
